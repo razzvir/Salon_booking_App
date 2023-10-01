@@ -434,8 +434,8 @@ async function sendWelcomeEmail(email, date, timeslot) {
     const transporter = nodemailer.createTransport({
       service: "Gmail", // or your email service provider
       auth: {
-        user: "bookyourstyleofficial@gmail.com", // Replace with your email
-        pass: "klelsmtxufaomxcl", // Replace with your email password or app-specific password
+        user: "bookyourstyle@gmail.com", // Replace with your email
+        pass: "klelsmtxuf", // Replace with your email password or app-specific password
       },
     });
 
