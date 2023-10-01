@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 3000,
+		"liveServer.settings.multiRootWorkspaceName": "try&run",
+		"liveServer.settings.ChromeDebuggingAttachment": false
+	}
+}

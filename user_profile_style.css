@@ -1,0 +1,67 @@
+        /* Center the container on the screen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #3498db; /* Colorful background */
+        }
+
+        /* Create a responsive square box */
+        .container {
+            background-color: #fff;
+            max-width: 100%;
+            width: 300px; /* Adjust the width as needed */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* User photo styles */
+        .user-photo {
+            width: 80px; /* Adjust the photo size as needed */
+            height: 80px;
+            border-radius: 50%; /* Make it circular */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Increase font size and add color to text */
+        h5, p {
+            font-size: 4vw; /* Responsive font size based on viewport width */
+            color: #333; /* Change the text color as needed */
+            margin: 0;
+        }
+
+        /* Style the edit icon */
+        .far.fa-edit {
+            color: #e74c3c; /* Change the icon color as needed */
+            font-size: 3vw; /* Responsive icon size based on viewport width */
+        }
+
+        /* Style the email and phone labels */
+        h6 {
+            font-size: 2vw; /* Responsive font size based on viewport width */
+            color: #2ecc71; /* Change the label color as needed */
+            margin: 0;
+        }
+
+        /* Style the email and phone text */
+        .text-muted {
+            font-size: 1.5vw; /* Responsive font size based on viewport width */
+            color: #555; /* Change the text color as needed */
+            margin: 0;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }

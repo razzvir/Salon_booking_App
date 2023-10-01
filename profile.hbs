@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user_profile_style.css">
+  
+   
+</head>
+<body>
+    <section class="vh-100">
+        <div class="container">
+            <section class="vh-100" style="background-color: #f4f5f7;">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-lg-6 mb-4 mb-lg-0">
+                      <div class="card mb-3" style="border-radius: .5rem;">
+                        <div class="row g-0">
+                          <div class="col-md-4 gradient-custom text-center text-white"
+                            style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                            <div class="container">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp" alt="Avatar" class="user-photo">
+                                <h5></h5>
+                                <p><h6>Name</h6>{{user.name}}</p>
+                                <i class="far fa-edit mb-3"></i>
+                                <h6>Email</h6>
+                                <p class="text-muted">{{user.email}}</p>
+                                {{!-- <h6>Phone</h6>
+                                <p class="text-muted">{{user.phno}}</p> --}}
+                            </div>
+                        
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+    </section>
+    <style>
+              /* Center the container on the screen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #3498db; /* Colorful background */
+        }
+
+        /* Create a responsive square box */
+        .container {
+            background-color: #fff;
+            max-width: 100%;
+            width: 300px; /* Adjust the width as needed */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* User photo styles */
+        .user-photo {
+            width: 80px; /* Adjust the photo size as needed */
+            height: 80px;
+            border-radius: 50%; /* Make it circular */
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        /* Increase font size and add color to text */
+        h5, p {
+            font-size: 2vw; /* Responsive font size based on viewport width */
+            color: #333; /* Change the text color as needed */
+            margin: 0;
+        }
+
+        /* Style the edit icon */
+        .far.fa-edit {
+            color: #e74c3c; /* Change the icon color as needed */
+            font-size: 3vw; /* Responsive icon size based on viewport width */
+        }
+
+        /* Style the email and phone labels */
+        h6 {
+            font-size: 2vw; /* Responsive font size based on viewport width */
+            color: #2ecc71; /* Change the label color as needed */
+            margin: 0;
+        }
+
+        /* Style the email and phone text */
+        .text-muted {
+            font-size: 1.5vw; /* Responsive font size based on viewport width */
+            color: #555; /* Change the text color as needed */
+            margin: 0;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+    </style>
+</body>
+</html>
+
